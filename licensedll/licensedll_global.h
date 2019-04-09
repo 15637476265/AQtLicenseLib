@@ -1,0 +1,12 @@
+#ifndef LICENSEDLL_GLOBAL_H
+#define LICENSEDLL_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(LICENSEDLL_LIBRARY)
+#  define LICENSEDLLSHARED_EXPORT Q_DECL_EXPORT
+#else
+#  define LICENSEDLLSHARED_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // LICENSEDLL_GLOBAL_H
